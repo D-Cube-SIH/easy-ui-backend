@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Dashboard</title>
+          <style>
+               * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                    font-family: Arial, sans-serif;
+                    user-select: none;
+                    -webkit-user-drag: none;
+                    overflow: hidden;
+               }
+
+               body {
+                    display: flex;
+                    height: 100vh;
+                    background-color: #03001c;
+               }
+
+               .main {
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+               }
+
+               .topbar {
+                    height: 60px;
+                    background-color: #05023d;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+               }
+
+               .content {
+                    flex: 1;
+                    padding: 50px 30px;
+                    font-size: 28px;
+                    overflow-y: auto;
+               }
+
+               .card {
+                    background-color: rgb(0, 0, 0);
+                    color: aliceblue;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+                    display: flex;
+               }
+
+               .btn-holder {
+                    height: 100px;
+                    width: 200px;
+                    align-content: center;
+               }
+
+
+               .btn-holder a {
+                    font-size: 13px;
+                    text-decoration: none;
+                    padding: 10px 16px;
+                    margin: 100px 0 0 10px;
+                    background: #0b03ac;
+                    color: aliceblue;
+                    border: none;
+                    border-radius: 7px;
+                    cursor: pointer;
+               }
+
+               @media (max-width: 768px) {
+
+                    .card {
+                         font-size: 16px;
+                    }
+
+                    .btn-holder a {
+                         font-size: 13px;
+                         padding: 8px 16px;
+                    }
+               }
+
+               @media (max-width: 540px) {
+                    body{
+                         overflow: hidden;
+                    }
+                    .topbar {
+                         font-size: 16px;
+                         height: 50px;
+                    }
+
+                    .card{
+                         width: 100%;
+                         flex-direction: column;
+                         justify-content: center;
+                         align-items: center;
+                    }
+                    
+                    .content {
+                         width: 80%;
+                         font-size: 16px;
+                         margin: 10px 0;
+                         padding: 15px;
+                    }
+
+                    .btn-holder a {
+                         font-size: 12px;
+                         padding: 6px 12px;
+                         margin-left: 50px;
+                         text-align: center;
+                    }
+               }
+          </style>
+     </head>
+
+     <body>
+          <div class="main">
+               <div class="topbar">
+                    Dcube (SIH team)
+               </div>
+
+               <div class="content">
+                    <div class="card">
+                         <img src="./assets/image.png" alt="webpage image" width="200px" height="100px">
+                         <div class="content" style="padding: 0 100px; align-content: center;">Our PPT Presentation
+                         </div>
+                         <div class="btn-holder">
+                              <a href='./assets/SIH2025-IDEA-Presentation-Format.pptx' download>Download the PPT</a>
+                         </div>
+                    </div>
+                    <div class="card">
+                         <img src="./assets/website.png" alt="webpage image" width="200px" height="100px">
+                         <div class="content" style="padding: 0 100px; align-content: center;">Our Mindly Website</div>
+                         <div class="btn-holder">
+                              <a href='https://project-tc5q.onrender.com' target='_blank'>🔗 Go to website</a>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+     </body>
+
+</html>
