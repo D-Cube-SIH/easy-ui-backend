@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-     origin: 'https://dcube-dashboard.netlify.app/'
+     origin: 'https://dcube-dashboard.netlify.app'
 }));
 
 app.use(express.json());
