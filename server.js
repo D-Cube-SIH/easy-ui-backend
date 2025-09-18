@@ -10,8 +10,8 @@ app.use(cors({
 app.use(express.json());
 
 const checkCredientials = (username , password) => {
-     const users = ['Krishna' , 'Kevin' , 'Lokesh' , 'Madhesh' , 'Pretheba' , 'Rachel'];
-     const passwords = ['784' , '886' , '735' , '861' , '915' , '936'];
+     const users = ['Krishna' , 'Kevin' , 'Lokesh' , 'Madhesh' , 'Pretheba' , 'Rachel' , 'Sudha'];
+     const passwords = ['784' , '886' , '735' , '861' , '915' , '936' , '1028'];
      for(let i = 0 ; i < users.length; i++){
           if(users[i] == username && passwords[i] == password){
                return true;
