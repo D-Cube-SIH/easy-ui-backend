@@ -36,5 +36,5 @@ app.post('/dashboard', (req, res) => {
 
 // start server
 app.listen(8080, () => {
-     console.log('Server running on http://localhost:8080');
+     console.log('Server running on port 8080');
 });
