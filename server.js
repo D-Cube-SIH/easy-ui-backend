@@ -23,7 +23,7 @@ const checkCredientials = (username , password) => {
 app.post('/user', (req, res) => {
      let crediendials = req.body;
 
-     if(checkCredientials(crediendials.username , crediendials.password)){
+     if(checkCredientials(crediendials.username.trim() , crediendials.password.trim())){
           res.json({ invalid: false, redirect: '/dashboard.html' });
      }else{
           res.json({ invalid: true });
